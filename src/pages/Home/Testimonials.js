@@ -34,7 +34,7 @@ const Testimonials = () => {
         <div className="mt-4 row">
           {testimonials.map(({ message, name, image }, key) => (
             <div className="col-md-4 px-4" key={key} data-aos="fade-up">
-              <div className="testimonial-card pt-4 pb-2 px-3">
+              <div className="testimonial-card pt-4 pb-2 px-4">
                 <p>{message}</p>
 
                 <div className="testimonial-person d-flex align-items-center">
@@ -50,7 +50,7 @@ const Testimonials = () => {
                   &nbsp; &nbsp;
                   <p
                     className="blue-text"
-                    style={{ fontSize: "18px", fontWeight: 700 }}
+                    style={{ fontSize: "18px", fontWeight: 700, marginTop: ".7rem" }}
                   >
                     {name}
                   </p>

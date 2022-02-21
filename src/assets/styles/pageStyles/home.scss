@@ -72,7 +72,7 @@
 .product-img {
   background: #f4f4f4;
   height: 20rem;
-  width: 90%;
+  width: 80%;
   margin: 0 auto 3rem;
   box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.16) !important;
 }
@@ -88,6 +88,8 @@
 .partners {
   img {
     width: 65%;
+    // width: 35%;
+    // width: 20%;
   }
 
   @media (max-width: 576px) {
@@ -114,7 +116,7 @@
   border-radius: 9.13696px;
   margin-top: 2rem;
   position: relative;
-  min-height: 19rem;
+  min-height: 22rem;
 
   p {
     font-size: 14px;
@@ -125,5 +127,9 @@
   .testimonial-person {
     position: absolute;
     bottom: 1rem;
+
+    // img {
+    //   margin-top: 1rem
+    // }
   }
 }
