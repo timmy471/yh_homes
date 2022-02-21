@@ -16,7 +16,7 @@ const Services = () => {
     product6,
   ];
   return (
-    <div className="container">
+    <div className="container" >
       <div
         style={{ padding: "3rem 0 1rem", borderBottom: "3px solid #FFCC00" }}
       >
@@ -24,7 +24,7 @@ const Services = () => {
       </div>
       <div className="row" style={{ marginTop: "2rem" }}>
         {productImages.map((product, key) => (
-          <div className="col-md-4" key={key}>
+          <div className="col-md-4" key={key} data-aos="fade-up">
             <div className="product-img p-2">
               <img src={product} alt="" width="100%" height="100%" />
             </div>

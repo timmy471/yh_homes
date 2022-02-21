@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { EnvVariables } from "./env/Env";
-import TagManager from "react-gtm-module";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,14 +16,6 @@ AOS.init(
   }
 );
 
-const gtmId =
-  EnvVariables?.REACT_APP_GOOGLE_ANALYTICS_ID ||
-  process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
-const tagManagerArgs = {
-  gtmId,
-};
-
-TagManager.initialize(tagManagerArgs);
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

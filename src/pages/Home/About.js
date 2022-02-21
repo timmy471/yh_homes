@@ -5,7 +5,7 @@ import aboutImg2 from "../../assets/images/body-img.png";
 const About = () => {
   return (
     <div className="container about-section">
-      <div className="text-center" id="about">
+      <div className="text-center" id="about" data-aos="zoom-in-right">
         <img src={aboutImg} alt="YJ Homes" />
       </div>
       <div
@@ -33,7 +33,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center" data-aos="zoom-in-right">
         <img src={aboutImg2} alt="YJ Homes" />
       </div>
       <div

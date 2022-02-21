@@ -33,7 +33,7 @@ const Testimonials = () => {
         </h3>
         <div className="mt-4 row">
           {testimonials.map(({ message, name, image }, key) => (
-            <div className="col-md-4 px-4" key={key}>
+            <div className="col-md-4 px-4" key={key} data-aos="fade-up">
               <div className="testimonial-card pt-4 pb-2 px-3">
                 <p>{message}</p>
 

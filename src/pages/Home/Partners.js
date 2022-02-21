@@ -21,7 +21,7 @@ const Partners = () => {
   ];
   return (
     <div style={{ padding: "4rem 0" }} className="partners">
-      <div className="container text-center">
+      <div className="container text-center" data-aos="fade-right">
         <h2 className="blue-text"> Our Partners </h2>
         <div style={{ marginTop: "6rem" }} className="row">
           {partnerImages.map((partner, key) => (
