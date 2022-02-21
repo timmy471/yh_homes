@@ -1,0 +1,166 @@
+@import "../variables";
+
+.root {
+  box-shadow: none !important;
+  padding: 0.8rem 0;
+  position: absolute;
+  top: 0;
+  background-color: $yjb-200-color!important;
+  // background-color: transparent!important;
+  a, .drop-down-arrow {
+    color: #FFFFFF;
+  }
+  &--light {
+    // background-color: #FFFFFF !important;
+    a {
+      color: $vlb-300-font;
+    }
+
+    .drop-down-arrow {
+      color: $vlb-300-font;
+    }
+  }
+  &--blue-bg {
+    // background-color: $vlb-500-color!important;
+    a {
+      color: $vlb-300-font;
+    }
+
+    .drop-down-arrow {
+      color: $vlb-300-font;
+    }
+  }
+}
+
+
+@mixin nav-text-style() {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.nav-text {
+  @include nav-text-style();
+}
+
+.nav-item {
+  @include nav-text-style();
+
+  &--active,
+  &:hover {
+    color: $vlo-200-color!important;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.dropdown-menu {
+  box-shadow: 5px 5px 5px #8888;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 230px !important;
+  margin: 1rem 0 0 -6rem
+}
+
+.dropdown li {
+  margin-right: 1.5rem
+}
+
+.sub-menu-item {
+  color: #0d0f11;
+  font-size: 14px;
+  padding: 0.7rem 0 0.7rem 1rem;
+
+  // &--active {
+  //   color: $vlo-200-color;
+  // }
+
+  &--active,
+  &:hover {
+    background-color: #f4f5f6;
+  }
+}
+
+.sub-menu div {
+  // padding: .7rem 0 .7rem 1rem;
+
+  // @media (max-width: 768px){
+  //  margin-top: 1.2rem
+  // }
+}
+
+.drawer {
+  width: 100%;
+}
+
+.mobile-nav-root {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.mobile-nav-header {
+  padding: 1rem 2rem;
+}
+
+.mobile-sub-menu {
+  margin: 1rem 0 0 1rem;
+}
+
+.header-item {
+  margin-right: 2rem;
+}
+
+@media (max-width: 960px) {
+  .nav-item {
+    // color: #1d1d1d;
+    font-weight: 600;
+
+    &--active,
+    &:hover {
+      color: $vlo-200-color;
+    }
+  }
+
+  .nav-items {
+    gap: 0;
+    a {
+      // margin-bottom: 2rem;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dropdown li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem
+  }
+
+  .nav-text {
+    font-weight: 600;
+  }
+
+  .sub-menu-item {
+    &--active,
+    &:hover {
+      background-color: transparent;
+    }
+    &--active {
+      color: $vlo-200-color;
+    }
+  }
+  .dropdown {
+    margin-bottom: 2rem
+  }
+}

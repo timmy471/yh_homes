@@ -1,0 +1,61 @@
+@import "../variables";
+
+.detail-card {
+  padding: 2rem 1.5rem 3rem;
+  border-radius: 15px;
+  min-height: 21rem;
+  height: 100%;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    color: #24292e;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 25px;
+    color: $vlb-300-font
+  }
+
+  &--light {
+    // border: 1px solid #bac2c9;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .detail-card {
+        min-height: 28rem;
+      }
+}
+
+@media (max-width: 576px) {
+  .detail-card {
+    // min-height: 29rem;
+
+    padding: 1.5rem 1rem 2rem;
+    h3 {
+      margin: 0.5rem 0 0rem;
+      font-size: 13px;
+      line-height: 32px;
+    }
+    p {
+      line-height: 22px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .detail-card {
+    min-height: 23rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .detail-card {
+    min-height: 29rem;
+  }
+}

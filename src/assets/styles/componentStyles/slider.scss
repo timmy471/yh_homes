@@ -1,0 +1,22 @@
+.slider {
+  min-height: 38rem;
+  position: relative;
+
+  .controls {
+    position: absolute;
+    bottom: -2rem;
+    // top: 0rem;
+    
+    .arrow-container {
+      background-color: #8aaef4;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &--disabled {
+          background-color: #b2bcd5
+      }
+    }
+  }
+}

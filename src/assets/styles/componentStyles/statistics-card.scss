@@ -1,0 +1,55 @@
+@import "../variables";
+
+.statistics-card-container {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  width: 92%;
+  border-top-width: 10px;
+  border-top-style: solid;
+
+  h2 {
+    color: #07365f;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 16px;
+    color: $vlb-300-font;
+    margin-top: -0.6rem;
+  }
+
+  &--green {
+    border-top-color: $vlg-100-color;
+  }
+
+  &--yellow {
+    border-top-color: $vlo-100-color;
+  }
+
+  &--orange {
+    border-top-color: $vlo-300-color;
+  }
+
+  &--blue {
+    border-top-color: $vlb-300-color;
+  }
+}
+
+@media (max-width: 576px) {
+  .statistics-card-container {
+    padding: 1.5rem 1.2rem;
+    width: 90%;
+    border-top-width: 6px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../variables";
+
+.pagination-container {
+  margin-top: 0;
+  display: flex;
+  color: "#000000!important";
+  justify-content: flex-end;
+  width: 100%;
+  // gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+
+  li {
+    margin-right: 1rem;
+  }
+}
+
+.pagination-active > a {
+  color: $vlo-300-color!important;
+}
+
+.pagination-link, .pagination-link > a, .pagination-active{
+  border: none;
+  color: #000000!important;
+}
+
+.pagination-disabled, .pagination-disabled > a {
+  color: grey!important;
+}

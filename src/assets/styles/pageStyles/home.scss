@@ -1,0 +1,129 @@
+@import "../variables";
+
+@mixin home-impact-bg {
+  background-image: url("../../images/impact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-banner {
+  height: 100vh;
+  background-image: url("../../images/banner-img.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  div {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+
+    @media (max-width: 576px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    background-size: cover;
+
+    div {
+      width: 90%;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-top: 2rem;
+  }
+}
+
+.about-section {
+  margin-top: 5rem;
+
+  img {
+    height: 500px;
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    img {
+      height: 200px;
+    }
+
+    margin-top: 3rem;
+  }
+  .about-text {
+    margin: 4rem 0;
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.product-img {
+  background: #f4f4f4;
+  height: 20rem;
+  width: 90%;
+  margin: 0 auto 3rem;
+  box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.16) !important;
+}
+
+.partners {
+  background-color: #fbf6e2;
+
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.partners {
+  img {
+    width: 65%;
+  }
+
+  @media (max-width: 576px) {
+    img {
+      width: 80%;
+      height: 3rem;
+    }
+  }
+}
+
+.testimonial-section {
+  border-top: 3px solid #ffcc00;
+  padding: 5rem 0 9rem;
+
+  h3 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+.testimonial-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 9.13696px rgba(0, 0, 0, 0.13);
+  border-radius: 9.13696px;
+  margin-top: 2rem;
+  position: relative;
+  min-height: 19rem;
+
+  p {
+    font-size: 14px;
+    line-height: 23px;
+    color: "#060606"
+  }
+
+  .testimonial-person {
+    position: absolute;
+    bottom: 1rem;
+  }
+}

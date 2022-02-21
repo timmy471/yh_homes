@@ -1,0 +1,170 @@
+// @import url("https://fonts.googleapis.com/css?family=Inter:wght@100,regular,bold,italic&subset=latin,latin-ext");
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+@import "variables";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+b,
+i,
+li {
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
+  // color: #FFFFFF!important;
+  // @include transition();
+}
+a:hover {
+  // text-decoration: none !important;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+//BACKGROUNDS
+// .bg-blue-primary {
+//   background-color: $vlb-100-color;
+// }
+
+// .bg-blue-secondary {
+//   background-color: $vlb-500-color;
+// }
+
+// .bg-blue-tetiary {
+//   background-color: $vlb-200-color;
+// }
+
+// .bg-blue-light {
+//   background-color: $vlb-500-color;
+// }
+
+//SPACES
+.space-top-1 {
+  margin-top: 2rem;
+}
+
+.space-top-2 {
+  margin-top: 4rem;
+}
+
+.space-top-3 {
+  margin-top: 6rem;
+}
+
+.space-top-4 {
+  margin-top: 8rem;
+}
+
+
+.space-bottom-1 {
+  margin-bottom: 2rem;
+}
+
+.space-bottom-2 {
+  margin-bottom: 4rem;
+}
+
+.space-bottom-3 {
+  margin-bottom: 6rem;
+}
+
+.space-bottom-4 {
+  margin-bottom: 8rem;
+}
+
+.vigilearn-logo {
+  width: 5.5rem;
+}
+
+
+.card-hover {
+  transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+}
+.card-hover:hover {
+  box-shadow: 0 11px 11px 0 rgba(0, 0, 0, 0.16) !important;
+  transform: translateY(-5px) !important;
+}
+
+
+
+.product-video {
+  height: 35rem;
+  width: 100%;
+}
+
+.iframe {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.blue-text {
+  color: $yjb-100-color
+}
+
+.yellow-text {
+  color: $yjy-100-color;
+}
+
+
+        
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+// Mobile devices
+@media (max-width: 480px) {
+  .cookie-container {
+  }
+}
+
+//Extra small devices (Iphone 5s)
+@media (max-width: 320px) {
+}

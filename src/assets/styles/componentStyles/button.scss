@@ -1,0 +1,91 @@
+@import "../variables";
+
+@mixin transition() {
+  transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
+}
+
+.vl-button {
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  font-style: normal;
+  border-color: unset;
+  border-style: none;
+  color: $yjb-200-color;
+
+  @include transition();
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    // box-shadow: 0px 10px 10px rgba(17, 122, 243, 0.1);
+    transform: translateY(-1.5px);
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  //variants
+  &--primary {
+    background-color: $yjy-100-color;
+  }
+
+  &--secondary {
+    background-color: $vlg-100-color;
+  }
+
+  &--tetiary {
+    background-color: $vlb-100-color;
+  }
+
+  &--outlined {
+    color: $vlo-300-color;
+    background-color: transparent;
+    border: 1px solid $vlo-300-color;
+    // font-weight: bold;
+  }
+
+  //sizes
+  &--lg {
+    padding: 12px 60px;
+    @media (max-width: 768px) {
+      // padding: 8px 12px;
+    }
+  }
+
+  &--md {
+    padding: 12px 24px;
+  }
+
+  &--sm {
+    padding: 10px 20px;
+  }
+
+  &--little {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  &--long {
+    padding: 0rem 5.5rem;
+    height: 48px;
+  }
+}
+
+@media (max-width: 320px) {
+  .vl-button {
+    font-size: 12px;
+  }
+}
+
+// transform: translateY(-6px);
+// box-shadow: 0px 30px 60px rgba($color: $black, $alpha: 0.3);
